@@ -12,15 +12,6 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 
 2.  Data Loading (Membaca File CSV):
 
-* `import pandas as pd
-
-# 1. Membaca file dataset CSV
-df = pd.read_csv("data_getaran_dummy.csv")
-
-# Menampilkan 5 baris pertama data
-print("=== 5 DATA PERTAMA ===")
-display(df.head(5))`
-
 * Program memuat dataset mentah dari file `.csv` (`data_getaran_dummy.csv`) yang berisi catatan hasil percobaan sensor (percepatan dasar, percepatan struktur, dan perpindahan).
 
 
