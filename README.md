@@ -1,10 +1,10 @@
-# Sistem Deteksi & Klasifikasi Gempa Berbasis IoT (ESP32 & MPU6050) & Machine Learning
+# Implementasi Algoritma Decision Tree untuk Klasifikasi Tingkat Respons Getaran Struktur Bangunan Miniatur pada Simulasi Gempa
 
-Proyek Machine Learning untuk Ujian Tengah Semester (UTS) dengan mengimplementasikan algoritma **Decision Tree Classifier** guna mengklasifikasikan tingkat guncangan getaran bangunan berdasarkan data sensor fisik.
+Proyek Machine Learning untuk Ujian Tengah Semester (UTS) dengan mengimplementasikan algoritma **Decision Tree Classifier** guna mengklasifikasikan tingkat  getaran struktur bangunan berdasarkan data sensor fisik untuk simulasi gempa.
 
 ## Struktur Pipeline 5 Sel:
 
-Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi gempa berbasis sensor MPU6050 dari awal hingga akhir:
+Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi getaran berbasis sensor MPU6050 dari awal hingga akhir:
 
 1. **Start:**
 * Titik awal dimulainya eksekusi program di dalam lingkungan Jupyter Lab.
