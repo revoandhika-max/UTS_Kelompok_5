@@ -39,11 +39,28 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 
 5.  Model Visualization (Plot Tree Gini & Rules):
 * Menghasilkan diagram visualisasi pohon keputusan secara grafis guna menampilkan titik percabangan kondisi sensor, nilai *Gini*, dan keputusan kelas akhir secara transparan.
-* a.Mengimpor Library Visualisasi & Plotting
+    * a.Mengimpor Library Visualisasi & Plotting
 
-    import matplotlib.pyplot as plt: Memanggil library Matplotlib yang berfungsi untuk merender dan menampilkan grafik atau gambar di dalam Jupyter Notebook.
+        `import matplotlib.pyplot as plt`: Memanggil library Matplotlib yang berfungsi untuk merender dan menampilkan grafik atau gambar di dalam Jupyter Notebook.
 
-  from sklearn.tree import plot_tree: Mengimpor fungsi khusus plot_tree dari scikit-learn untuk mengubah model Decision Tree yang sudah dilatih menjadi diagram visual berbentuk pohon secara         otomatis.
+        `from sklearn.tree import plot_tree`: Mengimpor fungsi khusus plot_tree dari scikit-learn untuk mengubah model Decision Tree yang sudah dilatih menjadi diagram visual berbentuk pohon secara           otomatis.
+    * b. Mengatur Ukuran Kanvas Gambar
+
+        `plt.figure(figsize=(10, 6))`: Berfungsi untuk menyiapkan ukuran kanvas (figure) grafik dengan lebar 10 inci dan tinggi 6 inci agar diagram pohon keputusan terlihat cukup luas, rapi, dan              tidak berhimpitan saat ditampilkan.
+    * c. Fungsi Utama Pembuatan Diagram Pohon (plot_tree)
+
+        `model`: Memasukkan objek model Decision Tree yang sebelumnya sudah dilatih menggunakan perintah `.fit(X, y)`.
+        
+        `feature_names=fitur`: Memberikan nama-nama kolom fitur (yaitu Percepatan dasar (g) dan Percepatan struktur (g)) agar teks pertanyaan di dalam kotak pohon sesuai dengan nama data aslinya.
+        
+        `class_names=model.classes_`: Menentukan label nama kelas target (Getaran Rendah, Getaran Sedang, Getaran Tinggi) agar kotak keputusan akhir menampilkan kategori bencana yang jelas.
+        
+        `filled=True`: Mewarnai kotak-kotak keputusan secara otomatis berdasarkan tingkat kemurnian atau kelas dominannya agar diagram jauh lebih mudah dibaca secara visual.
+        
+        `rounded=True`: Membuat sudut-sudut pada kotak diagram menjadi melengkung (rounded), sehingga tampilannya terlihat lebih modern dan rapi.
+        
+        `fontsize=10`: Mengatur ukuran teks di dalam diagram agar pas dan nyaman dibaca.
+    
 
 
 6.  Inference / Prediksi (Input Sensor Baru):**
