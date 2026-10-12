@@ -21,7 +21,7 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 4.  Model Training (Decision Tree Classifier):**
 * Proses pelatihan komputer menggunakan algoritma **Decision Tree** dengan kriteria *Gini Impurity* dan batas kedalaman pohon (*max_depth*), di mana model mempelajari pola hubungan dari data sensor.
      * a.  `from sklearn.tree import DecisionTreeClassifier`
-        baris ini berfungsi untuk mengimpor algoritma Decision Tree Classifier dari library scikit-learn (sklearn). Algoritma ini digunakan khusus untuk melakukan tugas klasifikasi (mengelompokkan         data ke dalam kategori-kategori tertentu seperti Getaran Rendah, Sedang, atau Tinggi).
+       * baris ini berfungsi untuk mengimpor algoritma Decision Tree Classifier dari library scikit-learn (sklearn). Algoritma ini digunakan khusus untuk melakukan tugas klasifikasi (mengelompokkan         data ke dalam kategori-kategori tertentu seperti Getaran Rendah, Sedang, atau Tinggi).
      * b.  `model = DecisionTreeClassifier(
             criterion="gini",
             max_depth=3,
@@ -34,7 +34,7 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
          * `random_state=42`: Angka acak tetap (seed) agar setiap kali kode ini dijalankan ulang, hasil pemilihan acak dan bentuk pohon keputusannya selalu konsisten dan sama persis.
 
      * c. `model.fit(X, y)`
-        Fungsi `.fit()` memerintahkan komputer untuk "belajar" dari data latihan. Komputer akan mencocokkan pola dari variabel Fitur (X): yaitu percepatan dasar dan struktur—terhadap label                   Target dan (y):yaitu kelas gempanya. Sehingga model terbentuk dan siap digunakan untuk menebak data baru.
+       * Fungsi `.fit()` memerintahkan komputer untuk "belajar" dari data latihan. Komputer akan mencocokkan pola dari variabel Fitur (X): yaitu percepatan dasar dan struktur—terhadap label                   Target dan (y):yaitu kelas gempanya. Sehingga model terbentuk dan siap digunakan untuk menebak data baru.
 
 
 5.  Model Visualization (Plot Tree Gini & Rules):**
