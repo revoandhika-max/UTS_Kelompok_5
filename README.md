@@ -1,10 +1,10 @@
 ## Kelompok 5 :##
 
-*# Revo Andhika Prastyo
+* # Revo Andhika Prastyo
 
-*# Ronaria Regriana
+* # Ronaria Regriana
 
-*# Ryananta Ar Rahman Putra Andriyanto
+* # Ryananta Ar Rahman Putra Andriyanto
 
 # Implementasi Algoritma Decision Tree untuk Klasifikasi Tingkat Respons Getaran Struktur Bangunan Miniatur pada Simulasi Gempa
 
