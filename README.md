@@ -1,3 +1,8 @@
+## Kelompok 5 :##
+*# Revo Andhika Prastyo
+*# Ronaria Regriana
+*# Ryananta Ar Rahman Putra Andriyanto
+
 # Implementasi Algoritma Decision Tree untuk Klasifikasi Tingkat Respons Getaran Struktur Bangunan Miniatur pada Simulasi Gempa
 
 Proyek Machine Learning untuk Ujian Tengah Semester (UTS) dengan mengimplementasikan algoritma **Decision Tree Classifier** guna mengklasifikasikan tingkat  getaran struktur bangunan berdasarkan data sensor fisik untuk simulasi gempa.
