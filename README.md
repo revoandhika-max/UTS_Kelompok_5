@@ -17,14 +17,14 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 
 3.  Preprocessing & Labeling (Aturan Logika Displacement):
   
-* Tahap pembersihan dan penerjemahan data angka mentah perpindahan bangunan menggunakan fungsi berbasis aturan `if-elif-else` untuk memberikan label kelas target (`Gempa Rendah`, `Gempa Sedang`, `Gempa Tinggi`), serta memisahkan variabel Fitur (X) dan Target (y).
+* Tahap pembersihan dan penerjemahan data angka mentah perpindahan bangunan menggunakan fungsi berbasis aturan `if-elif-else` untuk memberikan label kelas target (`Rendah`, `Sedang`, `Tinggi`), serta memisahkan variabel Fitur (X) dan Target (y).
 
 
 4.  Model Training (Decision Tree Classifier):
 
 * Proses pelatihan komputer menggunakan algoritma **Decision Tree** dengan kriteria *Gini Impurity* dan batas kedalaman pohon (*max_depth*), di mana model mempelajari pola hubungan dari data sensor.
      * a.  `from sklearn.tree import DecisionTreeClassifier`
-       * baris ini berfungsi untuk mengimpor algoritma Decision Tree Classifier dari library scikit-learn (sklearn). Algoritma ini digunakan khusus untuk melakukan tugas klasifikasi (mengelompokkan         data ke dalam kategori-kategori tertentu seperti Getaran Rendah, Sedang, atau Tinggi).
+       * baris ini berfungsi untuk mengimpor algoritma Decision Tree Classifier dari library scikit-learn (sklearn). Algoritma ini digunakan khusus untuk melakukan tugas klasifikasi (mengelompokkan         data ke dalam kategori-kategori tertentu seperti Rendah, Sedang, atau Tinggi).
      * b.  `model = DecisionTreeClassifier(
             criterion="gini",
             max_depth=3,
