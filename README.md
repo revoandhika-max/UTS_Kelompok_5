@@ -60,7 +60,7 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 
 8. Model Visualization (Plot Tree Gini & Rules):
   
-* Menghasilkan diagram visualisasi pohon keputusan secara grafis guna menampilkan titik percabangan kondisi sensor, nilai *Gini*, dan keputusan kelas akhir secara transparan.
+  * Menghasilkan diagram visualisasi pohon keputusan secara grafis guna menampilkan titik percabangan kondisi sensor, nilai *Gini*, dan keputusan kelas akhir secara transparan.
     * a.Mengimpor Library Visualisasi & Plotting
 
         `import matplotlib.pyplot as plt`: Memanggil library Matplotlib yang berfungsi untuk merender dan menampilkan grafik atau gambar di dalam Jupyter Notebook.
@@ -84,7 +84,6 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
         `fontsize=10`: Mengatur ukuran teks di dalam diagram agar pas dan nyaman dibaca.
     
 
-
-9.  Inference / Prediksi (Input Sensor Baru):
+9. Inference / Prediksi (Input Sensor Baru):
   
 * Tahap pengujian akhir di mana pengguna dapat memasukkan nilai input percepatan sensor secara interaktif untuk langsung mendapatkan hasil prediksi kategori status gempa secara *real-time*.
