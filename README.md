@@ -27,8 +27,12 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
   
 * Tahap pembersihan dan penerjemahan data angka mentah perpindahan bangunan menggunakan fungsi berbasis aturan `if-elif-else` untuk memberikan label kelas target (`Rendah`, `Sedang`, `Tinggi`), serta memisahkan variabel Fitur (X) dan Target (y).
 
+4. Pembagian Data Training dan Test
+   
+* Membagi dataset menjadi data latih (training) sebesar 80% dan data uji (testing) sebesar 20% menggunakan fungsi 'train_test_split' dengan 'stratify=y' (proporsi kelas seimbang). Hasilnya adalah 4.000 data latih dan 1.000 data uji.    
 
-4.  Model Training (Decision Tree Classifier):
+
+5.  Model Training (Decision Tree Classifier):
 
 * Proses pelatihan komputer menggunakan algoritma **Decision Tree** dengan kriteria *Gini Impurity* dan batas kedalaman pohon (*max_depth*), di mana model mempelajari pola hubungan dari data sensor.
      * a.  `from sklearn.tree import DecisionTreeClassifier`
@@ -47,8 +51,14 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
      * c. `model.fit(X, y)`
        * Fungsi `.fit()` memerintahkan komputer untuk "belajar" dari data latihan. Komputer akan mencocokkan pola dari variabel Fitur (X): yaitu percepatan dasar dan struktur—terhadap label                   Target dan (y):yaitu kelas gempanya. Sehingga model terbentuk dan siap digunakan untuk menebak data baru.
 
+6. Pengujian Model (Testing / Prediksi)
+     * Menguji model yang telah dilatih menggunakan data uji ( 'X_{test}' ) untuk menghasilkan prediksi kelas respons.
 
-5.  Model Visualization (Plot Tree Gini & Rules):
+7. Evaluasi Model
+      * Menghitung metrik performa model seperti Accuracy, Precision, Recall, dan F1-Score, serta menampilkan Classification Report. Berdasarkan evaluasi, model mencatatkan tingkat akurasi sekitar     93.80%. 
+
+
+8. Model Visualization (Plot Tree Gini & Rules):
   
 * Menghasilkan diagram visualisasi pohon keputusan secara grafis guna menampilkan titik percabangan kondisi sensor, nilai *Gini*, dan keputusan kelas akhir secara transparan.
     * a.Mengimpor Library Visualisasi & Plotting
@@ -75,6 +85,6 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
     
 
 
-6.  Inference / Prediksi (Input Sensor Baru):
+9.  Inference / Prediksi (Input Sensor Baru):
   
 * Tahap pengujian akhir di mana pengguna dapat memasukkan nilai input percepatan sensor secara interaktif untuk langsung mendapatkan hasil prediksi kategori status gempa secara *real-time*.
