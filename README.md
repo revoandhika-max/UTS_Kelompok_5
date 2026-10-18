@@ -29,7 +29,7 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
 
 4. Pembagian Data Training dan Test
    
-* Membagi dataset menjadi data latih (training) sebesar 80% dan data uji (testing) sebesar 20% menggunakan fungsi 'train_test_split' dengan 'stratify=y' (proporsi kelas seimbang). Hasilnya adalah 4.000 data latih dan 1.000 data uji.    
+* Membagi dataset menjadi data latih (training) sebesar 80% dan data uji (testing) sebesar 20% menggunakan fungsi `train_test_split` dengan `stratify=y` (proporsi kelas seimbang). Hasilnya adalah 4.000 data latih dan 1.000 data uji.    
 
 
 5.  Model Training (Decision Tree Classifier):
@@ -52,7 +52,7 @@ Diagram alur di atas menggambarkan urutan proses sistem deteksi dan klasifikasi 
        * Fungsi `.fit()` memerintahkan komputer untuk "belajar" dari data latihan. Komputer akan mencocokkan pola dari variabel Fitur (X): yaitu percepatan dasar dan struktur—terhadap label                   Target dan (y):yaitu kelas gempanya. Sehingga model terbentuk dan siap digunakan untuk menebak data baru.
 
 6. Pengujian Model (Testing / Prediksi)
-  * Menguji model yang telah dilatih menggunakan data uji ( 'X_{test}' ) untuk menghasilkan prediksi kelas respons.
+  * Menguji model yang telah dilatih menggunakan data uji ( `X_{test}` ) untuk menghasilkan prediksi kelas respons.
 
 7. Evaluasi Model
   * Menghitung metrik performa model seperti Accuracy, Precision, Recall, dan F1-Score, serta menampilkan Classification Report. Berdasarkan evaluasi, model mencatatkan tingkat akurasi sekitar     93.80%. 
